@@ -97,7 +97,7 @@ class MultipleStorage extends Storage
 	 */
 	public function chooseStorage()
 	{
-		return \Yii::$app->user->isGuest ? $this->storages[0] : $this->storages[1];
+		return \Yii::$app->user->getIsGuest() ? $this->storages[0] : $this->storages[1];
 	}
 
 	/**
