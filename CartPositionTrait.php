@@ -1,6 +1,6 @@
 <?php
 
-namespace hscstudio\cart;
+namespace asyou99\cart;
 
 use yii\base\Component;
 use yii\base\Object;

@@ -1,11 +1,11 @@
 <?php
 /**
- * @link https://www.github.com/hscstudio/yii2-cart
+ * @link https://www.github.com/asyou99/yii2-cart
  * @copyright Copyright (c) 2016 HafidMukhlasin.com
  * @license http://www.yiiframework.com/license/
  */
 
-namespace hscstudio\cart;
+namespace asyou99\cart;
 
 use Yii;
 use yii\base\BootstrapInterface;
@@ -29,7 +29,7 @@ class CartBootstrap implements BootstrapInterface
 	{
 		Event::on(User::className(), User::EVENT_AFTER_LOGIN, function () {
 			$storage = Instance::ensure(\Yii::$app->cart->storage, MultipleStorage::className());
-			if (get_class($storage) == 'hscstudio\cart\MultipleStorage') {
+			if (get_class($storage) == 'asyou99\cart\MultipleStorage') {
 				$cart = Instance::ensure(\Yii::$app->cart, Cart::className());
 				$storage->sync($cart);
 			}

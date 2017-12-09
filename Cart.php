@@ -1,11 +1,11 @@
 <?php
 /**
- * @link https://www.github.com/hscstudio/yii2-cart
+ * @link https://www.github.com/asyou99/yii2-cart
  * @copyright Copyright (c) 2016 HafidMukhlasin.com
  * @license http://www.yiiframework.com/license/
  */
 
-namespace hscstudio\cart;
+namespace asyou99\cart;
 
 use Yii;
 use yii\base\Component;
@@ -25,7 +25,7 @@ use yii\di\Instance;
  * @property bool $isEmpty Returns true if cart is empty
  * @property string $hash Returns hash (md5) of the current cart, that is uniq to the current combination
  * of items, quantities and costs
- * @package \hscstudio\cart
+ * @package \asyou99\cart
  */
 class Cart extends Component
 {
@@ -59,7 +59,7 @@ class Cart extends Component
 	 * MultipleStorage cart will be automatically stored in and loaded from Storage1 (if guest) or Storage2 (if user).
 	 * @var string
 	 */
-	public $storage = 'hscstudio\cart\SessionStorage';
+	public $storage = 'asyou99\cart\SessionStorage';
 
 	public function init()
 	{

@@ -15,13 +15,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist hscstudio/yii2-cart "*"
+php composer.phar require --prefer-dist asyou99/yii2-cart "*"
 ```
 
 or add
 
 ```json
-"hscstudio/yii2-cart": "*"
+"asyou99/yii2-cart": "*"
 ```
 
 to the `require` section of your composer.json.
@@ -42,7 +42,7 @@ ALTER TABLE `cart`
 or use migration
 
 ```
-yii migrate --migrationPath=@hscstudio/cart/migrations
+yii migrate --migrationPath=@asyou99/cart/migrations
 ```
 
 How to use
@@ -115,18 +115,18 @@ Also you can use cart as global application component:
 [
     'components' => [
         'cart' => [
-			'class' => 'hscstudio\cart\Cart',
+			'class' => 'asyou99\cart\Cart',
 		],
     ]
 ]
 ```
 
 Possible values of storage are 
-- hscstudio\cart\CookieStorage
-- hscstudio\cart\SessionStorage
-- hscstudio\cart\LocalStorage
-- hscstudio\cart\DatabaseStorage
-- hscstudio\cart\MultipleStorage
+- asyou99\cart\CookieStorage
+- asyou99\cart\SessionStorage
+- asyou99\cart\LocalStorage
+- asyou99\cart\DatabaseStorage
+- asyou99\cart\MultipleStorage
 
 Example configuration for MultipleStorage.
 
@@ -134,13 +134,13 @@ Example configuration for MultipleStorage.
 [
     'components' => [
         'cart' => [
-			'class' => 'hscstudio\cart\Cart',
+			'class' => 'asyou99\cart\Cart',
 			'storage' => [
-				'class' => 'hscstudio\cart\MultipleStorage',
+				'class' => 'asyou99\cart\MultipleStorage',
 				'storages' => [
-					['class' => 'hscstudio\cart\SessionStorage'],
+					['class' => 'asyou99\cart\SessionStorage'],
 					[
-						'class' => 'hscstudio\cart\DatabaseStorage',
+						'class' => 'asyou99\cart\DatabaseStorage',
 						'table' => 'cart',
 					],
 				],
@@ -155,18 +155,18 @@ If You use Multiple Storage, so You should add bootstrap in configuration file:
 ```php
     'bootstrap' => [
 		...
-		'hscstudio\cart\CartBootstrap'
+		'asyou99\cart\CartBootstrap'
 	],
 ```
 
-Or You can create and use Your own storageClass, it's should extends abstract class of hscstudio\cart\Storage.
+Or You can create and use Your own storageClass, it's should extends abstract class of asyou99\cart\Storage.
 It is look like :
 ```
 <?php
 
 namespace app\foo;
 
-use hscstudio\cart\Storage;
+use asyou99\cart\Storage;
 
 class ExampleStorage extends Storage
 {
@@ -220,7 +220,7 @@ Using discounts
 
 Discounts are implemented as behaviors that could attached to the cart or it's items. To use them, follow this steps:
 
-1. Define discount class as a subclass of hscstudio\cart\DiscountBehavior
+1. Define discount class as a subclass of asyou99\cart\DiscountBehavior
 ```php
 // app/components/MyDiscount.php
 

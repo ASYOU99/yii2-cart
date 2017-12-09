@@ -1,11 +1,11 @@
 <?php
 /**
- * @link https://www.github.com/hscstudio/yii2-cart
+ * @link https://www.github.com/asyou99/yii2-cart
  * @copyright Copyright (c) 2016 HafidMukhlasin.com
  * @license http://www.yiiframework.com/license/
  */
 
-namespace hscstudio\cart;
+namespace asyou99\cart;
 
 use Yii;
 use yii\di\Instance;
@@ -19,9 +19,9 @@ use yii\db\Query;
  * Usage:
  * Configuration in block component look like this
  *        'cart' => [
- *            'class' => 'hscstudio\cart\Cart',
+ *            'class' => 'asyou99\cart\Cart',
  *            'storage' => [
- *                'class' => 'hscstudio\cart\DatabaseStorage',
+ *                'class' => 'asyou99\cart\DatabaseStorage',
  *                'table'    => 'cart',
  *            ]
  *        ],

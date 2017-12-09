@@ -1,11 +1,11 @@
 <?php
 /**
- * @link https://www.github.com/hscstudio/yii2-cart
+ * @link https://www.github.com/asyou99/yii2-cart
  * @copyright Copyright (c) 2016 HafidMukhlasin.com
  * @license http://www.yiiframework.com/license/
  */
  
-namespace hscstudio\cart;
+namespace asyou99\cart;
 
 /**
  * CookieStorage is extended from Storage Class
@@ -15,9 +15,9 @@ namespace hscstudio\cart;
  * Usage:
  * Configuration in block component look like this
  *		'cart' => [
- *			'class' => 'hscstudio\cart\Cart',
+ *			'class' => 'asyou99\cart\Cart',
  *			'storage' => [
- *				'class' => 'hscstudio\cart\CookieStorage',
+ *				'class' => 'asyou99\cart\CookieStorage',
  *			]
  *		],
  *

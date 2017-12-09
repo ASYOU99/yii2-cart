@@ -1,6 +1,6 @@
 <?php
 
-namespace hscstudio\cart;
+namespace asyou99\cart;
 
 
 /**

@@ -3,7 +3,7 @@
  *
  * @author Hafid Mukhlasin <hafidmukhlasin@gmail.com>
  * @since 2.2
- * @link https://www.github.com/hscstudio/yii2-cart
+ * @link https://www.github.com/asyou99/yii2-cart
  * @copyright Copyright (c) 2016 HafidMukhlasin.com
  * @license http://www.yiiframework.com/license/
  */
